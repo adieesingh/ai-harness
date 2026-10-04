@@ -2,7 +2,7 @@ export type Usage = { input: number; output: number };
 export type StopReason = "stop" | "length" | "toolUse";
 
 
-export type TextBlock = {type:"text", text:string};
+export type TextBlock = {type:"text", text:string };
 export type ToolCallBlock = {type:"toolCall", id:string, name:string, arguments:Record<string, unknown>};
 export type ContentBlock = TextBlock|ToolCallBlock;
 
